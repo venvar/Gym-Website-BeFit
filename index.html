@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Fit</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS RESET*/
+    body{
+        font-family: 'Baloo 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img4.jpg');
+    }
+    .left{
+        position: absolute;
+        left:34px;
+        top: 20px;
+        display: inline-block;
+    }
+    .left img{
+        width: 136px;
+    }
+    .left div{
+        text-align: center;
+        color: red;
+        font-size: 30px;
+    }
+    .mid{
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        color: red;
+        text-decoration: underline;
+    }
+    .btn{
+        font-family: 'Baloo 2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid red;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: red;
+    }
+    .container{
+        margin: 100px 80px;
+        padding: 75px;
+        width: 30%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Baloo 2', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 8px;
+        font-size: 25px;
+    }
+    .container h1{
+        text-align: center;
+        color: white;
+    }
+    .container button{
+        display: block;
+        width: 34%;
+        margin: 20px auto;
+
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!--Left box for logo -->
+        <div class="left">
+            <img src="img3.png" alt="">
+            <div>Be Fit</div>
+        </div>
+        <!--Mid box for navbar-->
+        <div class="mid">
+            <ul class = "navbar">
+                <li><a href ='#' class="active">Home</a></li>
+                <li><a href ='#'>About us</a></li>
+                <li><a href ='#'>Fitness Calculator</a></li>
+                <li><a href ='#'>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Banglore</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>   
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div> 
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div> 
+            <button class="btn">submit</button>                               
+        </form>
+    </div>
+</body>
+</html>
